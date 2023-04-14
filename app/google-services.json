@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "998471938670",
+    "project_id": "team45-studycircle",
+    "storage_bucket": "team45-studycircle.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:998471938670:android:181043ed77010dd553ec7f",
+        "android_client_info": {
+          "package_name": "edu.northeasternn.studycircle"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "998471938670-fc4o76ldp1ftjfn2j391tlko5piliafb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDIlLvi1RE9nQGM7Swr-OOaQNfr57LeQgk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "998471938670-fc4o76ldp1ftjfn2j391tlko5piliafb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
