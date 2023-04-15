@@ -146,7 +146,7 @@ public class signup extends AppCompatActivity {
                                                 @Override
                                                 public void run() {
 
-                                                    startActivity(new Intent(signup.this, MainActivity.class));
+                                                    startActivity(new Intent(signup.this, login.class));
                                                 }
                                             }, 5000);
                                             //startActivity(new Intent(signup.this, MainActivity.class));
