@@ -18,5 +18,7 @@
     <string name = "cardSubject">Subject</string>
     <string name = "cardLocation">Location</string>
     <string name="buttonTextJoin">Join</string>
+    <string name="startTime">Start Time</string>
+    <string name="endTime">End Time</string>
 
 </resources>
