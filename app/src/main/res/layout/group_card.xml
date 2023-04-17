@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="2dp"
+    app:cardCornerRadius="5dp">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="0dp">
+
+        <TextView
+            android:id="@+id/group_title"
+            android:layout_width="265dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="67dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginEnd="76dp"
+            android:text="@string/cardTitle"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/group_subject"
+            android:layout_width="268dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/group_title"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="65dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="75dp"
+            android:text="@string/cardSubject"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/group_location"
+            android:layout_width="265dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/group_subject"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="67dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="76dp"
+            android:text="@string/cardLocation"
+            android:textAlignment="center" />
+
+        <Button
+            android:id="@+id/groupCardButton"
+            android:layout_width="208dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/group_location"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="95dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginEnd="105dp"
+            android:text="@string/buttonTextJoin"
+            android:textColor="#311B92"
+            app:cornerRadius="18dp"
+            tools:ignore="TextContrastCheck" />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

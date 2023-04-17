@@ -14,4 +14,9 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="emptyHomeFeed">No Groups Joined!</string>
     <string name="plus">plus</string>
+    <string name = "cardTitle">Title</string>
+    <string name = "cardSubject">Subject</string>
+    <string name = "cardLocation">Location</string>
+    <string name="buttonTextJoin">Join</string>
+
 </resources>
