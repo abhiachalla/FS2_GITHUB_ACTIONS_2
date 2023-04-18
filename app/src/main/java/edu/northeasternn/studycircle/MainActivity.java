@@ -9,6 +9,7 @@ import com.google.android.material.tabs.TabLayout;
 import com.google.android.material.tabs.TabLayoutMediator;
 
 import edu.northeasternn.studycircle.util.HomePagerAdapter;
+import edu.northeasternn.studycircle.util.ZoomOutPageTransformer;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -46,6 +47,7 @@ public class MainActivity extends AppCompatActivity {
         homeScreenViewPager = findViewById(R.id.homeScreenPager);
         final HomePagerAdapter homePagerAdapter = new HomePagerAdapter(this);
         homeScreenViewPager.setAdapter(homePagerAdapter);
+        homeScreenViewPager.setPageTransformer(new ZoomOutPageTransformer());
         new TabLayoutMediator(homeScreenTabs, homeScreenViewPager, (tab, position) -> {
             tab.setIcon(tabIcons[position]);
             tab.setText(tabLabels[position]);
