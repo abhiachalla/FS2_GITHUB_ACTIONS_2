@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SearchGroupFragment">
+
+
+    <LinearLayout
+        android:id="@+id/textInputLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/groupTitle"
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:hint="Group Name" />
+
+            <EditText
+                android:id="@+id/searchSubject"
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:hint="Subject" />
+
+            <EditText
+                android:id="@+id/searchZipCode"
+                android:layout_width="250dp"
+                android:layout_height="40dp"
+                android:hint="Zip Code"
+                tools:ignore="TouchTargetSizeCheck" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/groupSearchButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="SEARCH" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/textInputLayout"
+        android:id="@+id/checkboxInputLayout"
+        android:gravity="center_horizontal">
+        <CheckBox
+            android:id="@+id/findByZip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Find By Zip" />
+
+        <CheckBox
+            android:id="@+id/findByLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Find by current location" />
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/checkboxInputLayout"/>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
