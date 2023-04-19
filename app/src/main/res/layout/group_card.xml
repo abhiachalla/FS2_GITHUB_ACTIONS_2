@@ -1,26 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
+    android:id="@+id/cardview"
+    android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:layout_margin="2dp"
-    app:cardCornerRadius="5dp">
+    card_view:contentPadding="8dp"
+    card_view:cardCornerRadius="8dp"
+    card_view:cardElevation="8dp"
+    card_view:cardBackgroundColor="@color/white"
+    android:layout_margin="1dp">
 
-    <RelativeLayout
+    <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="0dp">
-
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_weight="1">
         <TextView
             android:id="@+id/group_title"
-            android:layout_width="265dp"
+            android:layout_margin="5dp"
+            android:layout_width="wrap_content"
+            android:minWidth="200dp"
             android:layout_height="wrap_content"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentEnd="true"
-            android:layout_marginStart="67dp"
-            android:layout_marginTop="7dp"
-            android:layout_marginEnd="76dp"
             android:text="@string/cardTitle"
             android:textAlignment="center"
             android:textColor="@android:color/black"
@@ -29,45 +32,39 @@
 
         <TextView
             android:id="@+id/group_subject"
-            android:layout_width="268dp"
+            android:layout_margin="5dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/group_title"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentEnd="true"
-            android:layout_marginStart="65dp"
-            android:layout_marginTop="5dp"
-            android:layout_marginEnd="75dp"
             android:text="@string/cardSubject"
             android:textAlignment="center" />
 
         <TextView
             android:id="@+id/group_location"
-            android:layout_width="265dp"
+            android:layout_margin="5dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/group_subject"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentEnd="true"
-            android:layout_marginStart="67dp"
-            android:layout_marginTop="2dp"
-            android:layout_marginEnd="76dp"
             android:text="@string/cardLocation"
             android:textAlignment="center" />
 
         <Button
             android:id="@+id/groupCardButton"
-            android:layout_width="208dp"
+            android:layout_width="wrap_content"
+            android:layout_margin="5dp"
+            android:maxWidth="320dp"
             android:layout_height="wrap_content"
-            android:layout_below="@id/group_location"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentEnd="true"
-            android:layout_marginStart="95dp"
-            android:layout_marginTop="1dp"
-            android:layout_marginEnd="105dp"
             android:text="@string/buttonTextJoin"
+            android:layout_weight="1"
             android:textColor="#311B92"
             app:cornerRadius="18dp"
             tools:ignore="TextContrastCheck" />
 
-    </RelativeLayout>
+    </LinearLayout>
+
+
+
+
+
+
+
 
 </androidx.cardview.widget.CardView>

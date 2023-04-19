@@ -208,7 +208,7 @@ public class GroupCardAdapter extends RecyclerView.Adapter<GroupCardAdapter.Grou
                     System.out.println("Group Id in view holder: " + groupId);
                     b.putString("groupId", groupId);
                     intent.putExtras(b); //Put your id to your next Intent
-                    view.getContext().startActivity(intent);
+                    //view.getContext().startActivity(intent);
 
                 }
             });

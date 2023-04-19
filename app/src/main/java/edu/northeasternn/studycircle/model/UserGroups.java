@@ -17,6 +17,11 @@ public class UserGroups {
         this.groups = groups;
     }
 
+    public UserGroups(UserGroups obj2){
+        this.user = obj2.getUser();
+        this.groups = obj2.getGroups();
+    }
+
     public String getUser() {
         return user;
     }

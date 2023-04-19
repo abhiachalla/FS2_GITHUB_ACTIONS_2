@@ -5,14 +5,17 @@ import java.util.Date;
 import java.util.List;
 
 public class Group {
-    String title;
-    String subject;
-    String location;
-    String description;
-    List<DayOfWeek> days;
-    String startTime;
-    String endTime;
-
+    private String title;
+    private String subject;
+    private String location;
+    private String description;
+    private List<DayOfWeek> days;
+    private String startTime;
+    private String endTime;
+    private String creatorId;
+    public String getCreatorId() {
+        return creatorId;
+    }
     public String getTitle() {
         return title;
     }
@@ -47,7 +50,7 @@ public class Group {
 
     public Group(String title, String subject, String location,
                  String description, List<DayOfWeek> days, String startTime,
-                 String endTime) {
+                 String endTime,String creatorId) {
         this.title = title;
         this.subject = subject;
         this.location = location;
@@ -55,5 +58,6 @@ public class Group {
         this.days = days;
         this.startTime = startTime;
         this.endTime = endTime;
+        this.creatorId = creatorId;
     }
 }
