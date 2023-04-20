@@ -1,0 +1,37 @@
+{
+	"authors": [
+		"Abhi Achalla"
+	],
+	"configurations": [
+		{
+			"name": "executable",
+			"targetType": "executable"
+		},
+		{
+			"dependencies": {
+				"bindbc-sdl": "~>1.3.0",
+				"unit-threaded": "~>2.1.2"
+			},
+			"excludedSourceFiles": [
+				"source/app.d"
+			],
+			"mainSourceFile": "bin/ut.d",
+			"name": "unittest",
+			"preBuildCommands": [
+				"dub run unit-threaded -c gen_ut_main -- -f bin/ut.d -d dub"
+			],
+			"targetType": "executable"
+		}
+	],
+	"copyright": "Copyright © 2023, Abhi Achalla",
+	"dependencies": {
+		"bindbc-sdl": "~>1.3.0",
+		"gtk-d": "~>3.10.0",
+		"unit-threaded": "~>2.1.2"
+	},
+	"description": "A minimal D application.",
+	"license": "proprietary",
+	"name": "3",
+	"targetPath": "bin",
+	"targetType": "executable"
+}

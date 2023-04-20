@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <title>Surface.changePixel (surface.Surface.changePixel)</title>
+	<meta charset="utf-8" />
+	<meta content="width=device-width, initial-scale=1" name="viewport" />
+        <link href="style.css" rel="stylesheet" />
+        <script src="script.js" type="text/javascript"></script>
+
+	
+	<link href="search-results.html" rel="prefetch" />
+</head>
+<body>
+	<div id="page-header">
+		<div id="logotype">
+		<span>Documentation</span>
+		<nav>
+			<a href="http://dlang.org/">Dlang.org</a>
+		</nav>
+		</div>
+
+		<form action="search-docs.html" id="search">
+			<input name="searchTerm" placeholder="Find a symbol name..." type="search" />
+			<input type="submit" value="Go" />
+		</form>
+	</div>
+	<div id="page-body">
+		<div id="page-content">
+		<h1>Surface.changePixel</h1><div class="breadcrumbs"><a class="breadcrumb" href="surface.html">surface</a> <a class="breadcrumb" href="surface._Surface.html">Surface</a> </div><div><div class="documentation-comment synopsis"><div><p>The changePixel function is used to change the color of a pixel at a given coordinate (x, y) on the image surface. 
+The function takes the RGB values of the new color as well as the brush type and size. 
+  Depending on the brush type, the function modifies several pixels around the target pixel to create the effect 
+  of a brush stroke. The function uses SDL_LockSurface and SDL_UnlockSurface functions to access the pixel 
+  data of the image surface safely.</p></div></div></div><div class="annotated-prototype"><div class="function-prototype"><div class="parent-prototype"><span class="builtin-type">class</span> <span class="name">Surface</span></div><div><div class="attributes"></div><div class="return-type"><span class="builtin-type">void</span></div><div class="function-name">changePixel</div><div class="template-parameters" data-count="0"></div><div class="runtime-parameters" data-count="7"><div class="parameters-list toplevel"><span class="paren">(</span><div class="runtime-parameter-item parameter-item"><span class="parameter-type-holder"><span class="parameter-type"><span class="builtin-type">int</span></span></span> <span class="parameter-name name" data-ident="x"><a href="#param-x">x</a></span></div><span class="comma">,</span><div class="runtime-parameter-item parameter-item"><span class="parameter-type-holder"><span class="parameter-type"><span class="builtin-type">int</span></span></span> <span class="parameter-name name" data-ident="y"><a href="#param-y">y</a></span></div><span class="comma">,</span><div class="runtime-parameter-item parameter-item"><span class="parameter-type-holder"><span class="parameter-type"><span class="builtin-type">ubyte</span></span></span> <span class="parameter-name name" data-ident="b"><a href="#param-b">b</a></span></div><span class="comma">,</span><div class="runtime-parameter-item parameter-item"><span class="parameter-type-holder"><span class="parameter-type"><span class="builtin-type">ubyte</span></span></span> <span class="parameter-name name" data-ident="g"><a href="#param-g">g</a></span></div><span class="comma">,</span><div class="runtime-parameter-item parameter-item"><span class="parameter-type-holder"><span class="parameter-type"><span class="builtin-type">ubyte</span></span></span> <span class="parameter-name name" data-ident="r"><a href="#param-r">r</a></span></div><span class="comma">,</span><div class="runtime-parameter-item parameter-item"><span class="parameter-type-holder"><span class="parameter-type"><span class="builtin-type">char</span></span></span> <span class="parameter-name name" data-ident="brushType"><a href="#param-brushType">brushType</a></span></div><span class="comma">,</span><div class="runtime-parameter-item parameter-item"><span class="parameter-type-holder"><span class="parameter-type"><span class="builtin-type">int</span></span></span> <span class="parameter-name name" data-ident="brushSize"><a href="#param-brushSize">brushSize</a></span></div><span class="paren">)</span></div></div><div class="function-contracts"></div></div></div></div><div></div></div>
+		<div id="page-nav"><a class="parent" href="surface.html">surface</a> <a class="parent" href="surface._Surface.html">Surface</a> 
+		<span class="type-separator">functions</span><ul><li><a class="function" href="surface._Surface._Pixel_At.html">PixelAt</a></li><li><a class="function current" href="surface._Surface.change_Pixel.html">changePixel</a></li><li><a class="function" href="surface._Surface.draw_Brush_Toolbox.html">drawBrushToolbox</a></li><li><a class="function" href="surface._Surface.draw_Color_Palette.html">drawColorPalette</a></li><li><a class="function" href="surface._Surface.get_Brush_Size.html">getBrushSize</a></li><li><a class="function" href="surface._Surface.get_Brush_Size_From_Panel.html">getBrushSizeFromPanel</a></li><li><a class="function" href="surface._Surface.get_Image_Surface.html">getImageSurface</a></li><li><a class="function" href="surface._Surface.is_Click_Inside_Brush_Panel.html">isClickInsideBrushPanel</a></li><li><a class="function" href="surface._Surface.load_Texture.html">loadTexture</a></li></ul></div>
+	</div>
+	<div id="page-footer">Page generated by <a href="https://github.com/adamdruppe/adrdox">adrdox</a></div>
+</body>
+</html>
